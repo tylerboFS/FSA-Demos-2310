@@ -1,9 +1,9 @@
-// So far, we have been storing one piece of data in constiables
+// So far, we have been storing one piece of data in variables
 const name = "Andre";
 const pets = 3; 
 const isStudent = true;
 
-// To store groups of data in a single constiable, we use arrays
+// To store groups of data in a single variable, we use arrays
 const names = ["Andre", "Karl", "Rashida", "Olivia"];
 
 // The entire array can be accessed by using the array's name 
