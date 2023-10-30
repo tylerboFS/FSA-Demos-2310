@@ -23,7 +23,7 @@ helloES5();
 
 // Functions can take parameters.
 // Parameters give a name to the data to be passed into the function
-declareHelloAgain = (x,y,z) => { 
+const declareHelloAgain = (x,y,z) => { 
   console.log("Hello, my parameter's values are " + x + ", " + y + ", and " + z);
   console.log("-----------------------------------");
   return;
@@ -32,3 +32,13 @@ declareHelloAgain = (x,y,z) => {
 // Function arguments give parameters their values
 // Here the parameter x is given the value 7 when the function is called
 declareHelloAgain(7, "Hello", true);
+
+const getGreeting = (name) => { 
+  return `Nice to meet you, ${name}`;
+}
+
+const greeting1 = getGreeting("Tyler");
+
+const greeting2 = getGreeting("Greg");
+
+console.log(greeting1);
