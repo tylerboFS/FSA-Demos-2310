@@ -30,8 +30,8 @@ console.log(a <= b);
 console.log(a >= b);
 
 // Logical operators take in two or more expressions and return true or false 
-var expression1 = (b == c);
-var expression2 = (a > b);
+const expression1 = (b == c);
+const expression2 = (a > b);
 
 // Evaluates to true if expression1 AND expression2 are both true, otherwise false
 
