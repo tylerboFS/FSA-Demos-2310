@@ -2,6 +2,7 @@ const comparisonOperators = ["Equal", "Not Equal", "Strict Equal", "Strict Not E
 const arithmaticOperators = ["+", "-", "%"];
 const logicalOperators = ["and", "or", "not"];
 const myString = "Hello String";
+const stringList = "One, Two, Three";
 
 //Array Methods
 // Sorts comparisonOperators array and returns the sorted array
@@ -32,3 +33,8 @@ console.log(myNewString);
 
 //The orginal string is unchanged
 console.log(myString);
+
+//Splits up the string according to the parameter and returns an array of the split up string.
+const myArray = stringList.split(", ");
+
+console.log(myArray);
