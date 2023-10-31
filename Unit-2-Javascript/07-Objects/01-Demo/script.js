@@ -14,3 +14,14 @@ console.log(planet.name);
 	
 // Uses bracket notation and logs "Earth"
 console.log(planet["name"]);
+
+// Returns keys of an object
+console.log(Object.keys(planet));
+
+// Returns values of an object
+console.log(Object.values(planet));
+
+// Loops through keys of an object
+for(const key in planet){
+  console.log(planet[key]);
+}
