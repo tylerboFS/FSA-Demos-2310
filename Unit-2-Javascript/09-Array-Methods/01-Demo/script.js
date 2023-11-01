@@ -27,18 +27,23 @@ console.log(canWatchRatedR);
 
 // Map returns a brand new array the same length as the first. Each element is passed into the callback.
 // Whatever is returned from the callback at each iteration is what goes into that index of the new array
+const nums = [1, 2, 3, 4];
+
+const numsTimesTwo = nums.map((n) => n * 2);
+
+console.log(numsTimesTwo);
 
 const cardedMoviePatrons = moviePatrons.map(patron => {
   // Copy the object being iterated over
-  const pObj = { ...patron };
+  const patronCopy = { ...patron };
   // Do everything else the same
-  if (pObj.age >= 17) {
-    pObj.canWatchRatedR = true;
+  if (patronCopy.age >= 17) {
+    patronCopy.canWatchRatedR = true;
   } else {
-    pObj.canWatchRatedR = false;
+    patronCopy.canWatchRatedR = false;
   }
   // Be sure to return the new obj, not the parameter
-  return pObj;
+  return patronCopy;
 });
 
 console.log("Movie Patrons: ")
